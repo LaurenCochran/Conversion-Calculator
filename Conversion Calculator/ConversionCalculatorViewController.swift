@@ -38,7 +38,7 @@ class ConversionCalculatorViewController: UIViewController {
     }
     
     @IBAction func convert(_ sender: AnyObject) {
-        let alert = UIAlertController(title: "Choose COnverter", message: nil, preferredStyle: UIAlertController.Style.actionSheet)
+        let alert = UIAlertController(title: "Choose Converter", message: nil, preferredStyle: UIAlertController.Style.actionSheet)
         alert.addAction(UIAlertAction(title: converters[0].label, style: UIAlertAction.Style.default, handler:{ (UIAlertAction)-> Void in
             self.outputDisplay.text = self.converters[0].outputUnit
             self.inputDisplay.text = self.converters[0].inputUnit
